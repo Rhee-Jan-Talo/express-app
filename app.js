@@ -14,7 +14,7 @@ app.get("/", async (req, res) => {
   try {
     const predictions = await model.classify({
       //gives image url to the trained model
-      imageUrl: "https://imageresizer.static9.net.au/7hupUTiuoadkTC7HIgZrPcyVO5c=/265x0:895x630/400x0/https%3A%2F%2Fprod.static9.net.au%2Ffs%2F3f2547d3-6c2a-46ff-b17e-07056c40910d",
+      imageUrl: "https://peoplaid.com/wp-content/uploads/2019/02/Kathryn-Bernardo.jpg",
     });
     //if prediction is successfull
     res.send(`<pre>${JSON.stringify(predictions, null, 2)}</pre>`); // Render predictions as JSON to html
