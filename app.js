@@ -24,7 +24,7 @@ app.get("/", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
-
+//iYES
 //initialize and listens to the port
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
