@@ -74,7 +74,7 @@ app.post("/upload", upload.single('image'), async (req, res) => {
   
 });
 
-//nasa phukie
+//change
 //initialize and listens to the port
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
