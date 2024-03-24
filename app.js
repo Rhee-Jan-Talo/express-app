@@ -43,7 +43,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/upload", upload.single('image'), async (req, res) => {
-  const sampleKey = "eab0739d80f71a3ed7e2ab03742b57e5"; // Replace this with your actual ImgBB API key
+  const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
   const form = new FormData(); // Creates empty form
   
   form.append("image", req.file.buffer, "fileName"); //uploads the file uploaded buffer into the empty form
@@ -56,7 +56,8 @@ app.post("/upload", upload.single('image'), async (req, res) => {
   console.log("res: ", response);
   const data = await response.json();
   const url = data.data.url
-  
+  console.log(url);
+
   const predictions = await model.classify({
     //gives image url to the trained model
     imageUrl: url,
@@ -64,10 +65,10 @@ app.post("/upload", upload.single('image'), async (req, res) => {
   
   console.log(predictions)
 
-  const array = [] 
+  const array = []
   
   for(const data of predictions){
-    console.log(`${Math.round(data.score * 100)} % , ${data.class}`)
+    console.log(`${(Math.round(data.score * 100)).toFixed(2)}%, ${data.class}`);
   }
 
   res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
