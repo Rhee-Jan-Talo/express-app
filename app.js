@@ -7,7 +7,15 @@ const TeachableMachine = require("@sashido/teachablemachine-node");
 const FormData = require('form-data');
 const multer = require('multer');
 
+const path = require('path');
 const app = express();
+
+// Set EJS as the view engine
+app.set('view engine', 'ejs');
+
+// Define the directory for views
+app.set('views', path.join(__dirname, 'views'));
+
 
 // Multer configuration
 const storage = multer.memoryStorage();
@@ -18,29 +26,32 @@ const model = new TeachableMachine({
   modelUrl: "https://teachablemachine.withgoogle.com/models/JG2cKYo5c/"
 });
 
-
 app.get("/", (req, res) => {
-  // try {
-  //   const predictions = await model.classify({
-  //     //gives image url to the trained model
-  //     imageUrl: "https://peoplaid.com/wp-content/uploads/2019/02/Kathryn-Bernardo.jpg",
-  //   });
-  //   //if prediction is successfull
-  //   res.send(`<pre>${JSON.stringify(predictions, null, 2)}</pre>`); // Render predictions as JSON to html
+  res.render('index', { message: 'Hello, World!' });
+})
 
-  // } catch (error) { //if something goes wrong/error it console.logs the error and returns and internal server error
-  //   console.error("Error:", error);
-  //   res.status(500).send("Internal Server Error");
-  // }
-  res.send(
-    `<div>
-      <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" filename="photo.jpg"/>
-        <button type="submit">Submit</button>
-      </form>
-    </div>`
-  );
-});
+// app.get("/", (req, res) => {
+//   // try {
+//   //   const predictions = await model.classify({
+//   //     //gives image url to the trained model
+//   //     imageUrl: "https://peoplaid.com/wp-content/uploads/2019/02/Kathryn-Bernardo.jpg",
+//   //   });
+//   //   //if prediction is successfull
+//   //   res.send(`<pre>${JSON.stringify(predictions, null, 2)}</pre>`); // Render predictions as JSON to html
+
+//   // } catch (error) { //if something goes wrong/error it console.logs the error and returns and internal server error
+//   //   console.error("Error:", error);
+//   //   res.status(500).send("Internal Server Error");
+//   // }
+//   res.send(
+//     `<div>
+//       <form action="/upload" method="post" enctype="multipart/form-data">
+//         <input type="file" name="image" filename="photo.jpg"/>
+//         <button type="submit">Submit</button>
+//       </form>
+//     </div>`
+//   );
+// });
 
 app.post("/upload", upload.single('image'), async (req, res) => {
   const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
