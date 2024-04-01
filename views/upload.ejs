@@ -1,15 +1,82 @@
 <%- include('layout') %>
 
 
-<div class="w-full flex flex-row gap-[50px] bg-greay">
-    <div class="p-10 w-half bg-red-500">
-        <p class="text-3xl">Result</p>
-    </div>
-    <div class="p-10 w-half bg-yellow">
-        <p>res</p>
-    </div>
+<!-- Navbar -->
+<div class="p-3 flex text-xl text-White bg-brown2">
+    <p class="pl-5 flex-none w-auto">Face Shape Guide</p>
+    <p class="pl-5 flex-initial w-auto"></p>Detection</p>
 </div>
 
+<!-- Body -->
+<div>
+    <div class="px-40 py-10 ">
+        <div class="px-10 py-8 bg-brown2 rounded-3xl text-center ">
+            <div class="flex">
+                <div class="flex-none">
+                    <div class=" w-14 text-white text-3xl font-bold ">
+                        Results
+                    </div>
+                    <img class="py-3" width="400" src="https://t3.ftcdn.net/jpg/01/65/63/94/360_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg">
+                </div>
+                <div class="flex-1">
+                    <!-- Square -->
+                    <div class="w-at text-white px-5">
+                        <div class=" mb-3 text-left">
+                            <span class="text-3xl font-medium font-bold">Square</span>
+                            <span class="text-sm font-medium">90%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-6 ">
+                            <div class="bg-yellow h-6 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- Round -->
+                    <div class="w-at text-white px-5">
+                        <div class=" mb-3 text-left">
+                            <span class="text-3xl font-medium font-bold">Round</span>
+                            <span class="text-sm font-medium">5%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-6 ">
+                            <div class="bg-yellow h-6 rounded-full" style="width: 5%"></div>
+                        </div>
+                    </div>
+                    <!-- Heart -->
+                    <div class="w-at text-white px-5">
+                        <div class=" mb-3 text-left">
+                            <span class="text-3xl font-medium font-bold">Heart</span>
+                            <span class="text-sm font-medium">5%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-6 ">
+                            <div class="bg-yellow h-6 rounded-full" style="width: 5%"></div>
+                        </div>
+                    </div>
+                    <!-- Oblong -->
+                    <div class="w-at text-white px-5">
+                        <div class=" mb-3 text-left">
+                            <span class="text-3xl font-medium font-bold">Oblong</span>
+                            <span class="text-sm font-medium">0%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-6 ">
+                            <div class="bg-yellow h-6 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <!-- Oval -->
+                    <div class="w-at text-white px-5">
+                        <div class=" mb-3 text-left">
+                            <span class="text-3xl font-medium font-bold">Oval</span>
+                            <span class="text-sm font-medium">0%</span>
+                        </div>
+                        <div class="w-full bg-white rounded-full h-6 ">
+                            <div class="bg-yellow h-6 rounded-full" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <%- include('footer') %>
