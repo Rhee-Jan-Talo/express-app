@@ -1,7 +1,30 @@
 <%- include('layout') %>
 
-<div class="w-[500px] bg-red-500">
-    <p class="">h <%= message %></p>
+<!-- Navbar -->
+<div class="p-3 flex text-xl text-White bg-brown2">
+    <p class="pl-5 flex-none w-auto">Face Shape Guide</p>
+    <p class="pl-5 flex-initial w-auto"></p>Detection</p>
 </div>
 
+<!-- Body -->
+<div>
+    <div class="px-32 py-10 ">
+        <div class="px-10 py-8 bg-brown2 rounded-3xl text-center">
+            <h1 class="text-white text-4xl font-bold">Detect your Face Shape</h1>
+            <h1 class="text-white text-opacity-80 ">Upload a photo of your face and wait for a few seconds</h1>
+            
+            <div class="p-3 text-brown2 rounded-lg  bg-greay flex m-10" >
+                
+                <input class="block w-full  text-gray-900 rounded-lg cursor-pointer bg-white py-3 pl-5 " id="file_input" type="file">
+                <button class="mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow">
+                    Scan
+                </button>
+                
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
 <%- include('footer') %>
