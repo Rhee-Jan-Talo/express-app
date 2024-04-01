@@ -56,6 +56,10 @@ app.get("/", (req, res) => {
 //   );
 // });
 
+app.get("/upload", (req, res)=>{
+  res.render("upload")
+})
+
 app.post("/upload", upload.single('image'), async (req, res) => {
   const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
   const form = new FormData(); // Creates empty form
@@ -87,7 +91,6 @@ app.post("/upload", upload.single('image'), async (req, res) => {
 
   // res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
   res.render('upload', { data: predictions });
-  
 });
 
 //change
