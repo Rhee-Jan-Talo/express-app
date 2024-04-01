@@ -29,6 +29,7 @@ const model = new TeachableMachine({
 });
 
 app.get("/", (req, res) => {
+  
   res.render('index', { message: 'Hello, World!' });
 })
 
@@ -85,6 +86,7 @@ app.post("/upload", upload.single('image'), async (req, res) => {
   }
 
   res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
+  res.render('index', { message: 'Hello, World!' });
   
 });
 
