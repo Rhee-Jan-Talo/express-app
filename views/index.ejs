@@ -12,19 +12,15 @@
         <div class="px-10 py-8 bg-brown2 rounded-3xl text-center">
             <h1 class="text-white text-4xl font-bold">Detect your Face Shape</h1>
             <h1 class="text-white text-opacity-80 ">Upload a photo of your face and wait for a few seconds</h1>
-            
-            <div class="p-3 text-brown2 rounded-lg  bg-greay flex m-10" >
-                
-                <input class="block w-full  text-gray-900 rounded-lg cursor-pointer bg-white py-3 pl-5 " id="file_input" type="file">
-                <button class="mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow">
-                    Scan
-                </button>
-                
-            </div>
+            <form method="post" action="/upload" enctype="multipart/form-data">
+                <div class="p-3 text-brown2 rounded-lg  bg-greay flex m-10" >
+                    <input class="block w-full  text-gray-900 rounded-lg cursor-pointer bg-white py-3 pl-5 " id="file_input" type="file" name="image" filename="photo.jpg" required>
+                    <button class="mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                        Scan
+                    </button>
+                </div>
+            </form>
         </div>
-        
-        
-        
     </div>
 </div>
 <%- include('footer') %>

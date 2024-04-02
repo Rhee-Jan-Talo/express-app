@@ -29,6 +29,7 @@ const model = new TeachableMachine({
 });
 
 app.get("/", (req, res) => {
+  
   res.render('index', { message: 'Hello, World!' });
 })
 
@@ -54,6 +55,10 @@ app.get("/", (req, res) => {
 //     </div>`
 //   );
 // });
+
+app.get("/upload", (req, res)=>{
+  res.render("upload")
+})
 
 app.post("/upload", upload.single('image'), async (req, res) => {
   const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
@@ -84,8 +89,8 @@ app.post("/upload", upload.single('image'), async (req, res) => {
     console.log(`${(Math.round(data.score * 100)).toFixed(2)}%, ${data.class}`);
   }
 
-  res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
-  
+  // res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
+  res.render('upload', { data: predictions });
 });
 
 //change

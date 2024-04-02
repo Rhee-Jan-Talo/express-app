@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./*.{css, js}",'./views/*.ejs'
+    "./*.{css,js}",
+    './views/*.ejs'
   ],
   theme: {
     colors: {
@@ -14,7 +15,12 @@ module.exports = {
       'greay': '#D9D9D9',
       
     },
-    extend: {},
+    extend: {
+      width:{
+        half: "50%",
+        xl: "350px"
+      }
+    },
   },
   plugins: [
     require('tailwindcss'),
