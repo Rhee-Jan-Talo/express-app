@@ -554,6 +554,13 @@ video {
   --tw-contain-style:  ;
 }
 
+<<<<<<< HEAD
+=======
+.static {
+  position: static;
+}
+
+>>>>>>> 491317805b7ea44496f377ae5c42bc0810193e12
 .m-10 {
   margin: 2.5rem;
 }
@@ -589,6 +596,14 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-\[50px\] {
+  gap: 50px;
 }
 
 .rounded-3xl {
@@ -661,6 +676,14 @@ video {
   line-height: 2rem;
 }
 
+<<<<<<< HEAD
+=======
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+>>>>>>> 491317805b7ea44496f377ae5c42bc0810193e12
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
