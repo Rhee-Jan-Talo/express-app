@@ -56,10 +56,6 @@ app.get("/", (req, res) => {
 //   );
 // });
 
-app.get("/upload", (req, res)=>{
-  res.render("upload")
-})
-
 app.post("/upload", upload.single('image'), async (req, res) => {
   const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
   const form = new FormData(); // Creates empty form
@@ -70,7 +66,6 @@ app.post("/upload", upload.single('image'), async (req, res) => {
     method: "POST",
     body: form,
   });
-
   
   const data = await response.json();
   const url = data.data.url
@@ -84,6 +79,7 @@ app.post("/upload", upload.single('image'), async (req, res) => {
 
   const predictionData = []
   
+  //prediction data with proper percentage value
   for(const data of predictions){
     predictionData.push(
       {
@@ -92,11 +88,13 @@ app.post("/upload", upload.single('image'), async (req, res) => {
       }
     )
   }
-
+  
+  //getting the highest shape
   const highestShapePercentage = predictions.reduce((prev, current) => {
     return (prev.score > current.score) ? prev : current;
   });
 
+  //setting outline image based on highest shape percentage
   let shapeOutline
   switch(highestShapePercentage.class) {
     case "Oblong":
