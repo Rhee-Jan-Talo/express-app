@@ -71,10 +71,9 @@ app.post("/upload", upload.single('image'), async (req, res) => {
     body: form,
   });
 
-  console.log("res: ", response);
+  
   const data = await response.json();
   const url = data.data.url
-  console.log(url);
 
   const predictions = await model.classify({
     //gives image url to the trained model
@@ -83,14 +82,48 @@ app.post("/upload", upload.single('image'), async (req, res) => {
   
   console.log(predictions)
 
-  const array = []
+  const predictionData = []
   
   for(const data of predictions){
-    console.log(`${(Math.round(data.score * 100)).toFixed(2)}%, ${data.class}`);
+    predictionData.push(
+      {
+        class: data.class,
+        score: (Math.round(data.score * 100)).toFixed(0)
+      }
+    )
+  }
+
+  const highestShapePercentage = predictions.reduce((prev, current) => {
+    return (prev.score > current.score) ? prev : current;
+  });
+
+  let shapeOutline
+  switch(highestShapePercentage.class) {
+    case "Oblong":
+      shapeOutline = "images/oblong.png";
+      break;
+    case "Square":
+      shapeOutline = "images/square.png";
+      break;
+    case "Round":
+      shapeOutline = "images/round.png";
+      break;
+    case "Oval":
+      shapeOutline = "images/oval.png";
+      break;
+    case "Heart":
+      shapeOutline = "images/heart.png";
+      break;
   }
 
   // res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
-  res.render('upload', { data: predictions });
+  console.log(predictions)
+  res.render('upload', 
+    { predictions:predictionData,
+      imageUrl: url ,
+      highestShapePercentage: highestShapePercentage.class,   
+      shapeOutline,
+    });
 });
 
 //change

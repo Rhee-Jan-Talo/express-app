@@ -16,67 +16,33 @@
                     <div class=" w-14 text-white text-3xl font-bold ">
                         Results
                     </div>
-                    <img class="py-3" width="400" src="https://t3.ftcdn.net/jpg/01/65/63/94/360_F_165639425_kRh61s497pV7IOPAjwjme1btB8ICkV0L.jpg">
-                </div>
-                <div class="flex-1">
-                    <!-- Square -->
-                    <div class="w-at text-white px-5">
-                        <div class=" mb-3 text-left">
-                            <span class="text-3xl font-medium font-bold">Square</span>
-                            <span class="text-sm font-medium">90%</span>
-                        </div>
-                        <div class="w-full bg-white rounded-full h-6 ">
-                            <div class="bg-yellow h-6 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <!-- Round -->
-                    <div class="w-at text-white px-5">
-                        <div class=" mb-3 text-left">
-                            <span class="text-3xl font-medium font-bold">Round</span>
-                            <span class="text-sm font-medium">5%</span>
-                        </div>
-                        <div class="w-full bg-white rounded-full h-6 ">
-                            <div class="bg-yellow h-6 rounded-full" style="width: 5%"></div>
-                        </div>
-                    </div>
-                    <!-- Heart -->
-                    <div class="w-at text-white px-5">
-                        <div class=" mb-3 text-left">
-                            <span class="text-3xl font-medium font-bold">Heart</span>
-                            <span class="text-sm font-medium">5%</span>
-                        </div>
-                        <div class="w-full bg-white rounded-full h-6 ">
-                            <div class="bg-yellow h-6 rounded-full" style="width: 5%"></div>
-                        </div>
-                    </div>
-                    <!-- Oblong -->
-                    <div class="w-at text-white px-5">
-                        <div class=" mb-3 text-left">
-                            <span class="text-3xl font-medium font-bold">Oblong</span>
-                            <span class="text-sm font-medium">0%</span>
-                        </div>
-                        <div class="w-full bg-white rounded-full h-6 ">
-                            <div class="bg-yellow h-6 rounded-full" style="width: 0%"></div>
-                        </div>
-                    </div>
-                    <!-- Oval -->
-                    <div class="w-at text-white px-5">
-                        <div class=" mb-3 text-left">
-                            <span class="text-3xl font-medium font-bold">Oval</span>
-                            <span class="text-sm font-medium">0%</span>
-                        </div>
-                        <div class="w-full bg-white rounded-full h-6 ">
-                            <div class="bg-yellow h-6 rounded-full" style="width: 0%"></div>
-                        </div>
+                    <div style="position: relative;">
+                        <!-- UPLOADED IMAGE -->
+                        <img class="py-3" width="400" src="<%= imageUrl %>">
+                        <!-- OUTLINE IMAGE -->
+                        <img src="<%= shapeOutline %>" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 250px; height: 250px;">
                     </div>
                 </div>
-                
-                
-                
+                <div class="flex-1 mt-12">
+                    <!-- CLASS PERCENTAGE -->
+                    <% predictions.map((item) => { %>
+                        <div class="w-at text-white px-5">
+                            <div class="mb-3 text-left">
+                                <span class="text-3xl font-medium font-bold"><%= item.class %></span>
+                                <span class="ml-2 text-sm font-medium"><%= item.score %>%</span>
+                            </div>
+                            <div class="w-full bg-white rounded-full h-6 ">
+                                <div class="bg-yellow h-6 rounded-full" style="width: <%= item.score %>%;"></div>
+                                                                                 <!-- DISREGARD LANG ANG ERROR -->
+                            </div>
+                        </div>
+                    <% }); %>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
+<script>
+</script>
 
 <%- include('footer') %>
