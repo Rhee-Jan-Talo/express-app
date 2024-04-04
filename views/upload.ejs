@@ -18,7 +18,7 @@
                     </div>
                     <div style="position: relative;">
                         <!-- UPLOADED IMAGE -->
-                        <img class="py-3" width="400" src="<%= imageUrl %>">
+                        <img class=" py-3" width="400" src="<%= imageUrl %>">
                         <!-- OUTLINE IMAGE -->
                         <img src="<%= shapeOutline %>" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 250px; height: 250px;">
                     </div>
@@ -34,16 +34,52 @@
                             </div>
                             <div class="w-full bg-white rounded-full h-6 ">
                                 <div class="bg-yellow h-6 rounded-full" style="width: <%= item.score %>%;"></div>
-                                                                                 <!-- DISREGARD LANG ANG ERROR -->
+                                <!-- DISREGARD LANG ANG ERROR -->
                             </div>
                         </div>
-                    <% }); %>
+                        <% }); %>
+                    </div>
+                </div>
+                <div class="pt-10 flex-nowrap text-white text-3xl font-bold ">
+                    Recommended Hairstyles
+                </div>
+                <div class="flex py-5">
+                    <div class="flex-auto p-4">
+                        <div class="row flex py-2">
+                            <div class="flex-none text-white text-3xl font-bold w-64 ">
+                                Hair Type
+                            </div>
+                            <button class="flex-1 mx-3 px-5 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                                Straight
+                            </button>
+                            <button class="flex-1 mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                                Wavy
+                            </button>
+                            <button class="flex-1 mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                                Curly
+                            </button>
+                        </div>
+                        <div class="row flex py-2">
+                            <div class="flex-none text-white text-3xl font-bold w-64 ">
+                                Length
+                            </div>
+                            <button class="flex-1 mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                                Long
+                            </button>
+                            <button class="flex-1 mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                                Mid
+                            </button>
+                            <button class="flex-1 mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                                Short
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-</div>
-<script>
-</script>
-
-<%- include('footer') %>
+    <script>
+    </script>
+    
+    <%- include('footer') %>
