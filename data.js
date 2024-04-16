@@ -1172,16 +1172,41 @@ export const data = [
     },
 
 
-
-
-
     // Heart Curly Long
     {
         faceShape: "heart",
         hairType: "curly",
         Length: "long",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Half-Up Half-Down",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyLong/Half-UpHalf-Down.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Messy, Textured Bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyLong/Messy,TexturedBangs.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Razor Bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyLong/RazorBangs.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Side-Swept Straight Bangs With Curly Hair",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyLong/Side-SweptStraightBangsWithCurlyHair.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Super Long Shag",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyLong/SuperLongShag.webp"
     },
 
     // Heart Curly Mid
@@ -1189,17 +1214,75 @@ export const data = [
         faceShape: "heart",
         hairType: "curly",
         Length: "mid",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Curly 80s Bob",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyMid/Curly80sBob.webp",
     },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Curly Peekaboo Bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyMid/CurlyPeekabooBangs.webp",
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Lifted Roots",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyMid/LiftedRoots.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Mid-Length Shag with Longer Bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyMid/Mid-LengthShagwithLongerBangs.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "short, choppy bangs paired with seamless layers",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyMid/short,choppybangspairedwithseamlesslayers.webp"
+    },
+
+
 
     // Heart Curly Short
     {
         faceShape: "heart",
         hairType: "curly",
         Length: "short",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Betty Boop Bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyShort/BettyBoopBangs.png"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Bouncy bob",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyShort/Bouncybob.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Curly bob",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyShort/Curlybob.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "French Bob",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyShort/FrenchBob.png"
+    },
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Tousled, Undone French Bob",
+        hairImage: "public/Face_Shapes/Heart/HeartCurlyShort/Tousled,UndoneFrenchBob.png"
     },
 
     // Heart Straight Long
@@ -1207,8 +1290,15 @@ export const data = [
         faceShape: "heart",
         hairType: "straight",
         Length: "long",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Half updo with wispy bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightLong/Halfupdowithwispybangs.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Straight long layers",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightLong/Straightlonglayers.jpg"
     },
 
     // Heart Straight Mid
@@ -1216,8 +1306,22 @@ export const data = [
         faceShape: "heart",
         hairType: "straight",
         Length: "mid",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Layered lob cut with flicked ends and middle part",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightMid/Layeredlobcutwithflickedendsandmiddlepart.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Shoulder length long bob with side swept bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightMid/Shoulderlengthlongbobwithsidesweptbangs.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Wolfcut with wispy, eyebrow-skimming bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightMid/Wolfcutwithwispy,eyebrow-skimmingbangs.jpg"
     },
 
     // Heart Straight Short
@@ -1225,17 +1329,46 @@ export const data = [
         faceShape: "heart",
         hairType: "straight",
         Length: "short",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Close crop pixie",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightShort/Closecroppixie.jpg"
     },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "C shaped bob with bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightShort/Cshapedbobwithbangs.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Flipped bob",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightShort/Flippedbob.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Long graduated bob",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightShort/Longgraduatedbob.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Side swept long pixie",
+        hairImage: "public/Face_Shapes/Heart/HeartStraightShort/Sidesweptlongpixie.jpg"
+    },
+
 
     // Heart Wavy Long
     {
         faceShape: "heart",
         hairType: "wavy",
         Length: "long",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Half updo with wispy bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyLong/Halfupdowithwispybangs.jpg"
     },
 
     // Heart Wavy Mid
@@ -1243,8 +1376,29 @@ export const data = [
         faceShape: "heart",
         hairType: "wavy",
         Length: "mid",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Blunt bangs and wavy layers",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyMid/Bluntbangsandwavylayers.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Layered lob cut with flicked ends and middle part",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyMid/Layeredlobcutwithflickedendsandmiddlepart.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Long waves bob with side swept bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyMid/Longwavesbobwithsidesweptbangs.webp"
+    },
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Wolf cut with wispy, eyebrow-skimming bangs",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyMid/Wolfcutwithwispy,eyebrow-skimmingbangs.jpg"
     },
 
     // Heart Wavy Short
@@ -1252,10 +1406,23 @@ export const data = [
         faceShape: "heart",
         hairType: "wavy",
         Length: "short",
-        hairStyle: "",
-        hairImage: ""
+        hairStyle: "Blunt bangs and wavy layers",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyShort/Bluntbangsandwavylayers.jpg"
     },
-
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "cheek bones",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyShort/cheekbones.jpg"
+    },
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Long graduated bob",
+        hairImage: "public/Face_Shapes/Heart/HeartWavyShort/Longgraduatedbob.jpg"
+    },
 
 
 ]
