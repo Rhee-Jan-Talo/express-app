@@ -623,11 +623,255 @@ export const data = [
     
     // Oblong Curly Long
     {
-        faceShape: "round",
-        hairType: "wavy",
-        Length: "short",
-        hairStyle: "Chin-Length Shaggy Haircut",
-        hairImage: "public/Face_Shapes/Round/RoundWavyShortLength/Chin-LengthShaggyHaircut.jpg"
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Center parted low ponytail",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyLong/Centerpartedlowponytail.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Curtain Bangs With Layered haircut",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyLong/CurtainBangsWithLayeredhaircut.jpg"
     },
     
-    ]
+
+    // Oblong Curly Mid
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Half-up half-down with wispy curly bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyMid/Half-uphalf-downwithwispycurlybangs.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Shoulder-Length Finger Waves",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyMid/Shoulder-LengthFingerWaves.jpg"
+    },
+
+
+    // Oblong Curly Short
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Close cropped pixie",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyShort/Closecroppedpixie.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Curly pixie",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyShort/Curlypixie.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Curly short bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyShort/Curlyshortbob.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "sculpted curls and side-swept bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyShort/sculptedcurlsandside-sweptbob.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Wedge cut",
+        hairImage: "public/Face_Shapes/Oblong/OblongCurlyShort/Wedgecut.jpg"
+    },
+
+
+    // Oblong Straight Long
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Center parted low ponytail",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightLong/Centerpartedlowponytail.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Jelly fish cut",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightLong/Jellyfishcut.webp"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Side-Swept Hairstyles For Oblong Face",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightLong/Side-SweptHairstylesForOblongFace.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Sleek Straight Layered Haircut",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightLong/SleekStraightLayeredHaircut.jpg"
+    },
+
+    // Oblong Straight Mid
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Asymmetric lob with bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightMid/Asymmetriclobwithbangs.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "long layers with shorter angles starting near your cheekbones or lips",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightMid/longlayerswithshorteranglesstartingnearyourcheekbonesorlips.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Mid-length bob with long side swept bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightMid/Mid-lengthbobwithlongsidesweptbangs.jpg"
+    },
+    
+    // Oblong Straight Short
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Blunt bob with bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightShort/Bluntbobwithbangs.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Bouncy bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightShort/Bouncybob.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Close cropped pixie",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightShort/Closecroppedpixie.webp"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "French bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightShort/Frenchbob.webp"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Piecy Pixie",
+        hairImage: "public/Face_Shapes/Oblong/OblongStraightShort/PiecyPixie.webp"
+    },
+
+    // Oblong Wavy Long
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "long",
+        hairStyle: "Bardot bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyLong/Bardotbangs.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "long",
+        hairStyle: "Center parted low ponytail",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyLong/Centerpartedlowponytail.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "long",
+        hairStyle: "Jelly fish cut",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyLong/Jellyfishcut.jpg"
+    },
+
+
+    // Oblong Wavy Mid
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Asymmetric lob with bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyMid/Asymmetriclobwithbangs.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Deep side part",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyMid/Deepsidepart.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Faux curtain bangs and beachy waves",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyMid/Fauxcurtainbangsandbeachywaves.webp"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "long layers with shorter angles starting near your cheekbones or lips",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyMid/longlayerswithshorteranglesstartingnearyourcheekbonesorlips.jpg"
+    },
+
+    // Oblong Wavy Short
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Bouncy bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyShort/Bouncybob.webp"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Chin-Length Bob with Blunt Ends",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyShort/Chin-LengthBobwithBluntEnds.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Short Cut with Swoopy Bangs",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyShort/ShortCutwithSwoopyBangs.webp"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Wavy hollywood bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyShort/Wavyhollywoodbob.jpg"
+    },
+    {
+        faceShape: "oblong",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Wavy Medium-Length Bob",
+        hairImage: "public/Face_Shapes/Oblong/OblongWavyShort/WavyMedium-LengthBob.webp"
+    },
+
+]
