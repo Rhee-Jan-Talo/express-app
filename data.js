@@ -874,4 +874,388 @@ export const data = [
         hairImage: "public/Face_Shapes/Oblong/OblongWavyShort/WavyMedium-LengthBob.webp"
     },
 
+    // Oval Curly Long
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Bombshell Curls with Caramel Highlights",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyLong/BombshellCurlswithCaramelHighlights.jpg"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Curly Side Part",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyLong/CurlySidePart.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "Extra Long Curly Locks",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyLong/ExtraLongCurlyLocks.jpg"
+    },
+
+
+    // Oval Curly Mid
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Mid Shag",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyMid/MidShag.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Natural Half-Up,Half-Down",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyMid/NaturalHalf-Up,Half-Down.jpg"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Shoulder-Length with Long Fringe",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyMid/Shoulder-LengthwithLongFringe.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "Top-Heavy with a Middle Part",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyMid/Top-HeavywithaMiddlePart.webp"
+    },
+
+    // Oval Curly Short
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Heart-Shaped Fro",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyShort/Heart-ShapedFro.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Natural Pompadour",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyShort/NaturalPompadour.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Side-Swept Pixie",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyShort/Side-SweptPixie.jpg"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Tousled Pixie",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyShort/TousledPixie.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "Transition Pixie",
+        hairImage: "public/Face_Shapes/Oval/OvalCurlyShort/TransitionPixie.webp"
+    },
+
+
+    // Oval Straight Long
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Face-Framing Layers",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightLong/Face-FramingLayers.jpg"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Long Flowy Style",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightLong/LongFlowyStyle.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Long Layered Hair for Oval Face",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightLong/LongLayeredHairforOvalFace.jpg"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Long Layers",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightLong/LongLayers.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "Sleek Lob",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightLong/SleekLob.webp"
+    },
+
+    // Oval Straight Mid
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Angled Bob with Middle Part",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightMid/AngledBobwithMiddlePart.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Medium-Length Cut for Fine Hair",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightMid/Medium-LengthCutforFineHair.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Messy Bedhead Layers",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightMid/MessyBedheadLayers.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Sleek Long Bob",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightMid/SleekLongBob.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "Straight Cut for Oval Shaped Face",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightMid/StraightCutforOvalShapedFace.webp"
+    },
+
+    // Oval Straight Short
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Bob with Deep Side Part",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightShort/BobwithDeepSidePart.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Chin-Length Bob",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightShort/Chin-LengthBob.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Pixie Cut with Dramatic Side Part",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightShort/PixieCutwithDramaticSidePart.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Ruffled Pixie",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightShort/RuffledPixie.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "Short Messy Bob",
+        hairImage: "public/Face_Shapes/Oval/OvalStraightShort/ShortMessyBob.webp"
+    },
+
+    // Oval Wavy Long
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "long",
+        hairStyle: "Long Feathered Waves",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyLong/LongFeatheredWaves.jpg"
+    },
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "long",
+        hairStyle: "Long Wavy Bronde Hair",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyLong/LongWavyBrondeHair.jpg"
+    },
+
+    // Oval Wavy Mid
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Mid-Length Cut with Curtain Fringe",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyMid/Mid-LengthCutwithCurtainFringe.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Shiny Bob with Wavy Texture",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyMid/ShinyBobwithWavyTexture.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Wavy Hair for Oval Face Shape",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyMid/WavyHairforOvalFaceShape.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Wavy Hairstyle with Front Highlights",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyMid/WavyHairstylewithFrontHighlights.webp"
+    },
+
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "Wavy Medium-Length Hair",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyMid/WavyMedium-LengthHair.webp"
+    },
+
+    // Oval Wavy Short
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Choppy Long Bob",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyShort/ChoppyLongBob.webp"
+    },
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Layered Lob for Oval Face",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyShort/LayeredLobforOvalFace.webp"
+    },
+
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Shoulder-Length Shag",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyShort/Shoulder-LengthShag.webp"
+    },
+
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Textured Bob With Heavy Bangs",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyShort/TexturedBobWithHeavyBangs.webp"
+    },
+
+    {
+        faceShape: "oval",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "Wavy Bob",
+        hairImage: "public/Face_Shapes/Oval/OvalWavyShort/WavyBob.webp"
+    },
+
+
+
+
+
+    // Heart Curly Long
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "long",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Curly Mid
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "mid",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Curly Short
+    {
+        faceShape: "heart",
+        hairType: "curly",
+        Length: "short",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Straight Long
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "long",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Straight Mid
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "mid",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Straight Short
+    {
+        faceShape: "heart",
+        hairType: "straight",
+        Length: "short",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Wavy Long
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "long",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Wavy Mid
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "mid",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+    // Heart Wavy Short
+    {
+        faceShape: "heart",
+        hairType: "wavy",
+        Length: "short",
+        hairStyle: "",
+        hairImage: ""
+    },
+
+
+
 ]
