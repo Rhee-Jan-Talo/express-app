@@ -7,6 +7,26 @@
     <p class="pl-5 flex-initial w-auto"></p>Detection</p>
 </div>
 
+<style>
+    .hairstyles{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+    .image-container{
+        width: 315px;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .image{
+        width: 315px;
+        
+    }
+    .opacity-hidden{
+        opacity: 0;
+    }
+</style>
+
 <!-- Body -->
 <div>
     <div class="px-40 py-10 ">
@@ -40,46 +60,84 @@
                         <% }); %>
                     </div>
                 </div>
-                <div class="pt-10 flex-nowrap text-white text-3xl font-bold ">
-                    Recommended Hairstyles
+
+                <div class="pt-10 text-white text-3xl font-bold pb-6">
+                    <p>Hair Recommendations</p>
                 </div>
-                <div class="flex py-5">
-                    <div class="flex-auto p-4">
-                        <div class="row flex py-2">
-                            <div class="flex-none text-white text-3xl font-bold w-64 ">
-                                Hair Type
-                            </div>
-                            <button class="flex-none mx-3 px-5 py-3 font-bold text-2xl rounded-lg bg-yellow " type="submit">
-                                Straight
-                            </button>
-                            <button class="flex-none mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow " type="submit">
-                                Wavy
-                            </button>
-                            <button class="flex-none mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow " type="submit">
-                                Curly
-                            </button>
-                        </div>
-                        <div class="row flex py-2">
-                            <div class="flex-none text-white text-3xl font-bold w-64 ">
-                                Length
-                            </div>
-                            <button class="flex-none mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow " type="submit">
-                                Long
-                            </button>
-                            <button class="flex-none mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow " type="submit">
-                                Mid
-                            </button>
-                            <button class="flex-none mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow " type="submit">
-                                Short
-                            </button>
-                        </div>
+                <form class="flex flex-row gap-2" onsubmit="generateFilter()">
+                    <div class="row flex py-2">
+                        <label for="hairType" class="flex-none text-white text-lg width-l ">Select Hair Type: </label>
+                        <select required name="hairType" id="hairType" class="flex-none mx-3 width-m py-1 px-2 text-lg rounded-lg bg-yellow">
+                            <option value="">...</option>
+                            <option value="straight">Straight</option>
+                            <option value="wavy">Wavy</option>
+                            <option value="curly">Curly</option>
+                        </select>
                     </div>
+                    <div class="row flex py-2">
+                        <label for="hairLength" class="flex-none text-white text-lg width-l ">Select Hair Length: </label>
+                        <select required name="hairLength" id="hairLength" class="flex-none mx-3 width-m py-1 px-2 text-lg rounded-lg bg-yellow">
+                            <option value="">...</option>
+                            <option value="long">Long</option>
+                            <option value="mid">Mid</option>
+                            <option value="short">Short</option>
+                        </select>
+                    </div>
+                    <div class="row flex py-2">
+                        <button type="submit" class="flex-none mx-3 width-m py-1 px-4 text-lg rounded-lg bg-yellow">
+                            Filter Results
+                        </button>
+                    </div>
+                    <div class="row flex py-2">
+                        <button type="button" onclick="removeHidden()" class="flex-none mx-3 width-m py-1 px-4 text-lg rounded-lg bg-yellow">
+                            Reset Filters
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="hairstyles mt-8">
+                    <!-- filter out item.hairType and item.hairLength depending on what filter is-->
+                    <% hairStyleData.map((item) => { %>
+                        <div class="image-container all-hairstyles" id="<%= item.hairType %>-<%= item.Length %>">
+                            <img src="<%= item.hairImage %>"  class="image"/>
+                            <p class="text-white text-xl font-bold"><%= item.hairStyle %></p>
+                        </div>
+                    <% }); %>
                 </div>
             </div>
 
         </div>
     </div>
     <script>
+        function removeHidden(){
+            const collection = document.getElementsByClassName("all-hairstyles");
+            for(item of collection){
+                item.classList.remove("hidden")
+            }
+        }
+
+        function renderHairStyles(hairType, hairLength){
+            const collection = document.getElementsByClassName("all-hairstyles");
+            for(item of collection){
+                let data = item.id.split("-")
+                console.log(data)
+                if(data[0] === hairType && data[1] === hairLength){
+                    console.log("match")
+                }
+                else{
+                    item.classList.add("hidden")
+                }
+            }
+        }
+        
+        function generateFilter(){
+            removeHidden()
+            let hairType = document.getElementById("hairType").value
+            let hairLength = document.getElementById("hairLength").value
+            event.preventDefault()
+            renderHairStyles(hairType, hairLength)
+        }
+        
     </script>
     
     <%- include('footer') %>

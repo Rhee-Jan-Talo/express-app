@@ -18,6 +18,8 @@ app.set('view engine', 'ejs');
 // Define the directory for views
 app.set('views', path.join(__dirname, 'views'));
 
+// Import the data from the data.js file
+const { hairStyleData } = require('./data.js');
 
 // Multer configuration
 const storage = multer.memoryStorage();
@@ -30,7 +32,7 @@ const model = new TeachableMachine({
 
 app.get("/", (req, res) => {
   
-  res.render('index', { message: 'Hello, World!' });
+  res.render('index', { message: 'Hello, World!' , hairStyleData });
 })
 
 // app.get("/", (req, res) => {
@@ -78,7 +80,6 @@ app.post("/upload", upload.single('image'), async (req, res) => {
     imageUrl: url,
   });
   
-  console.log(predictions)
 
   const predictionData = []
   
@@ -118,12 +119,12 @@ app.post("/upload", upload.single('image'), async (req, res) => {
   }
 
   // res.send(`<p>${JSON.stringify(predictions, null, 2)}`);
-  console.log(predictions)
   res.render('upload', 
     { predictions:predictionData,
       imageUrl: url ,
       highestShapePercentage: highestShapePercentage.class,   
       shapeOutline,
+      hairStyleData: hairStyleData.filter(item => item.faceShape.toLowerCase() === highestShapePercentage.class.toLowerCase())
     });
 });
 
