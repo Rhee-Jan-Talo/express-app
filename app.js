@@ -31,35 +31,8 @@ const model = new TeachableMachine({
 });
 
 app.get("/", (req, res) => {
-  
   res.render('index', { message: 'Hello, World!' , hairStyleData });
 })
-
-// app.get("/", (req, res) => {
-//   // try {
-//   //   const predictions = await model.classify({
-//   //     //gives image url to the trained model
-//   //     imageUrl: "https://peoplaid.com/wp-content/uploads/2019/02/Kathryn-Bernardo.jpg",
-//   //   });
-//   //   //if prediction is successfull
-//   //   res.send(`<pre>${JSON.stringify(predictions, null, 2)}</pre>`); // Render predictions as JSON to html
-
-//   // } catch (error) { //if something goes wrong/error it console.logs the error and returns and internal server error
-//   //   console.error("Error:", error);
-//   //   res.status(500).send("Internal Server Error");
-//   // }
-//   res.send(
-//     `<div>
-//       <form action="/upload" method="post" enctype="multipart/form-data">
-//         <input type="file" name="image" filename="photo.jpg"/>
-//         <button type="submit">Submit</button>
-//       </form>
-//     </div>`
-//   );
-// });
-// app.get("/upload", (req, res) => {
-//   res.render('upload');
-// })
 
 app.post("/upload", upload.single('image'), async (req, res) => {
   const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
@@ -79,7 +52,6 @@ app.post("/upload", upload.single('image'), async (req, res) => {
     //gives image url to the trained model
     imageUrl: url,
   });
-  
 
   const predictionData = []
   
@@ -133,10 +105,10 @@ app.post("/upload", upload.single('image'), async (req, res) => {
 
 //If Else Kemeroot
 
-
-
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 //sample
+
+module.exports = app;
