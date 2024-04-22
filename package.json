@@ -17,7 +17,7 @@
   "scripts": {
     "start": "node app.js",
     "build:css": "tailwindcss build styles.css -o public/styles.css",
-    "build": "npm run build:css",
+    "vercel-build": "no no no",
     "deploy": "vercel --prod",
     "startdev": "nodemon app.js",
     "eslint": "eslint ./",
