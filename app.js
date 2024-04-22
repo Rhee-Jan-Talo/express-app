@@ -105,10 +105,9 @@ app.post("/upload", upload.single('image'), async (req, res) => {
 
 //If Else Kemeroot
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-//sample
 
 module.exports = app;
