@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "build:css": "tailwindcss build styles.css -o public/styles.css && nodemon app.js",
+    "build:css": "tailwindcss build styles.css -o public/styles.css",
     "build": "npm run build:css",
     "deploy": "vercel --prod",
     "startdev": "nodemon app.js",
