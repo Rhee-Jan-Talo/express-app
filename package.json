@@ -1,5 +1,5 @@
 {
-  "name": "citihardware-storefront",
+  "name": "face-shape-detection",
   "version": "0.1.0",
   "dependencies": {
     "@sashido/teachablemachine-node": "^1.2.2",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "node app.js",
-    "build:css": "tailwindcss build styles.css -o public/styles.css",
+    "build:css": "tailwindcss build styles.css -o public/styles.css && nodemon app.js",
     "build": "npm run build:css",
     "deploy": "vercel --prod",
     "startdev": "nodemon app.js",
