@@ -1,9 +1,13 @@
 {
   "version": 2,
+  "builds":[{
+    "src": "./app.js",
+    "use": "@vercel/node"
+  }],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "http://localhost:4000/$1"
+      "dest": "/"
     }
   ]
 }
