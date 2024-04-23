@@ -35,12 +35,12 @@ app.get("/", (req, res) => {
 })
 
 app.post("/upload", upload.single('image'), async (req, res) => {
-  const sampleKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
+  const apiKey = "42039efd6f0e27cab389b7de387c3faf"; // Replace this with your actual ImgBB API key
   const form = new FormData(); // Creates empty form
   
   form.append("image", req.file.buffer, "fileName"); //uploads the file uploaded buffer into the empty form
 
-  const response = await fetch(`https://api.imgbb.com/1/upload?key=${sampleKey}`, { // submits the created form to the imgbb api
+  const response = await fetch(`https://api.imgbb.com/1/upload?key=${apiKey}`, { // submits the created form to the imgbb api
     method: "POST",
     body: form,
   });
@@ -105,7 +105,7 @@ app.post("/upload", upload.single('image'), async (req, res) => {
 
 //If Else Kemeroot
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

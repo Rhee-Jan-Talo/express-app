@@ -1,21 +1,89 @@
 <%- include('layout') %>
-
 <!-- Navbar -->
 <div class="p-3 flex text-xl text-White bg-brown2">
     <p class="pl-5 flex-none w-auto">Face Shape Guide</p>
     <p class="pl-5 flex-initial w-auto"></p>Detection</p>
 </div>
 
+<!-- Custom CSS for loading state -->
+<style>
+.ring
+{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:180px;
+  height:180px;
+  background:transparent;
+  border-radius:50%;
+  text-align:center;
+  line-height:180px;
+  font-family:sans-serif;
+  font-size:20px;
+  border:1px solid #3c3c3c;
+  color:#ECC085;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  border-radius:50%;
+  text-shadow:0 0 10px #ECC085;
+  box-shadow:0 0 10px #27221F;
+}
+.ring:before
+{
+  content:'';
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height:100%;
+  border:3px solid transparent;
+  border-top:3px solid #ECC085;
+  border-right:3px solid #ECC085;
+  border-left:3px solid #ECC085;
+  border-radius:50%;
+  animation:animateC 2s linear infinite;
+}
+@keyframes animateC
+{
+  0%
+  {
+    transform:rotate(0deg);
+  }
+  100%
+  {
+    transform:rotate(360deg);
+  }
+}
+@keyframes animate
+{
+    0%
+  {
+    transform:rotate(45deg);
+  }
+  100%
+  {
+    transform:rotate(405deg);
+  }
+}
+.fill{
+    opacity: .4;
+}
+.disable-input{
+    pointer-events: none;
+}
+</style>
+
 <!-- Body -->
-<div>
-    <div class="px-32 py-10 ">
+<div id="body-div">
+    <div class="px-32 py-10 " disable>
         <div class="px-10 py-8 bg-brown2 rounded-3xl text-center">
             <h1 class="text-white text-4xl font-bold">Detect your Face Shape</h1>
             <h1 class="text-white text-opacity-80 ">Upload a photo of your face and wait for a few seconds</h1>
             <form method="post" action="/upload" enctype="multipart/form-data">
                 <div class="p-3 text-brown2 rounded-lg  bg-greay flex m-10" >
                     <input class="block w-full  text-gray-900 rounded-lg cursor-pointer bg-white py-3 pl-5 " id="file_input" type="file" name="image" filename="photo.jpg" required>
-                    <button class="mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit">
+                    <button class="mx-3 px-10 py-3 font-bold text-2xl rounded-lg bg-yellow" type="submit" onclick="loadingState()" id="submit_button">
                         Scan
                     </button>
                 </div>
@@ -26,4 +94,23 @@
         <img src="<%= item.hairImage %>" />
     <% }); %> -->
 </div>
+
+<!-- loading state -->
+<div class="ring hidden" id="loading-state">Loading
+</div>
+
+<script>
+    function loadingState(){
+        //check if there is an input
+        if(document.getElementById('file_input').value){
+            //add opacity to body div
+            document.getElementById('body-div').classList.add("fill")
+            //remove the hidden class on loading state to show it
+            document.getElementById('loading-state').classList.remove("hidden")
+            //disable buttons
+            document.getElementById('file_input').classList.add("disable-input")
+            document.getElementById('submit_button').classList.add("disable-input")
+        }
+    }
+</script>
 <%- include('footer') %>
